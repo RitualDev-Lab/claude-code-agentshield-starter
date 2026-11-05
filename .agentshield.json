@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ritualdev.in/schema/agentshield.v1.json",
+  "version": "1.0",
+  "profile": "strict",
+  "sandbox": {
+    "enabled": true,
+    "blockProcEnviron": true,
+    "blockSysInspection": true,
+    "isolateSSH": true,
+    "maxTimeoutMs": 25000
+  },
+  "redaction": {
+    "mode": "token",
+    "maskPrefix": "[REDACTED_SECRET]",
+    "rules": [
+      "openai",
+      "anthropic",
+      "aws_credentials",
+      "github_tokens",
+      "database_uris",
+      "private_keys",
+      "env_variables"
+    ]
+  },
+  "egress": {
+    "policy": "allowlist",
+    "allowDomains": [
+      "api.anthropic.com",
+      "api.openai.com",
+      "github.com",
+      "ritualdev.in"
+    ]
+  }
+}

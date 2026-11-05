@@ -1,0 +1,25 @@
+{
+  "name": "claude-code-agentshield-starter",
+  "version": "1.0.0",
+  "description": "1-Click Starter Kit for Claude Code & Claude Desktop with Real-Time AgentShield PreToolUse Defense Hooks",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/verify-defense.test.js",
+    "test:adversarial": "npx @ritualdev-lab/agentshield exec -- cat /proc/self/environ",
+    "scan": "npx @ritualdev-lab/agentshield scan ."
+  },
+  "keywords": [
+    "claude-code",
+    "claude-desktop",
+    "anthropic",
+    "agentshield",
+    "ai-agent-defense",
+    "pretooluse-hook",
+    "zero-leak"
+  ],
+  "author": "RitualDev Studio (https://ritualdev.in)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ritualdev-lab/agentshield": "^0.2.1"
+  }
+}

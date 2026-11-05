@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "PreToolUse": "npx @ritualdev-lab/agentshield exec \"$TOOL_COMMAND\""
+  },
+  "settings": {
+    "autoApprove": false,
+    "strictMode": true,
+    "logEgress": true
+  }
+}
