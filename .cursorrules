@@ -1,0 +1,4 @@
+# Cursor AI Rules for claude-code-agentshield-starter
+- All shell executions in this project must be routed through AgentShield sandbox hooks (`npx @ritualdev-lab/agentshield exec`).
+- Never write plain text API secrets or production database credentials to files or environment variables.
+- Preserve `.claude/config.json` PreToolUse hook configuration.
