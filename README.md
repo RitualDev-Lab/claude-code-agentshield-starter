@@ -15,6 +15,14 @@
 
 ---
 
+> **Canonical Consolidated Example Notice**: This starter template is now maintained canonically inside [`RitualDev-Lab/AgentShield/examples/claude-code-starter`](https://github.com/RitualDev-Lab/AgentShield/tree/main/examples/claude-code-starter).  
+> You can also boot the full 3-layer defense stack (AgentShield + DBShield + SkillPrism) declaratively using [`ritual.policy.yaml`](https://github.com/RitualDev-Lab/AgentShield/blob/main/examples/ritual.policy.yaml):
+> ```bash
+> npx @ritualdev-lab/agentshield up --config ritual.policy.yaml
+> ```
+
+---
+
 ## ⚡ What is this?
 
 When autonomous coding agents (Claude Code, Cursor, Windsurf) run shell commands or inspect directories, untrusted model outputs or adversarial prompt injection payloads can trick them into exfiltrating credentials (`cat .env`, `cat /proc/self/environ`, or `printenv`).
