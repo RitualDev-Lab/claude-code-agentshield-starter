@@ -20,6 +20,6 @@
   "author": "RitualDev Studio (https://ritualdev.in)",
   "license": "Apache-2.0",
   "dependencies": {
-    "@ritualdev-lab/agentshield": "^0.2.1"
+    "@ritualdev-lab/agentshield": "^0.2.2"
   }
 }
