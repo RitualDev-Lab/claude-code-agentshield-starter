@@ -20,5 +20,8 @@ jobs:
       - name: Run Unit & Defense Tests
         run: npm test
 
-      - name: Audit Repository for Secret Leaks
-        run: npx @ritualdev-lab/agentshield scan src/index.ts
+      - name: Audit Repository Configs for Secret Leaks
+        run: |
+          npx -y @ritualdev-lab/agentshield scan .claude/config.json
+          npx -y @ritualdev-lab/agentshield scan .agentshield.json
+          npx -y @ritualdev-lab/agentshield scan README.md
